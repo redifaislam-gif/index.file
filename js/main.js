@@ -1,33 +1,4 @@
 
-
-  var slide = document.getElementById("slide");
-  var prev = document.getElementById("prev");
-  var next = document.getElementById("next");
-  
-  let x =0;
-  prev.onclick = function(){
-      if(x > "-10500"){
-        x = x -320;
-        slide.style.top = x + "px";
-      }
-
-      next.onclick = function(){
-        if(x < 0){
-          x = x + 320;
-          slide.style.top = x + "px";
-        }
-    
-  
-  }
-
-
-
-
-
-
-
-
-
 var cards = $('#card-slider .slider-item').toArray();
 
 startAnim(cards);
@@ -55,63 +26,6 @@ function sortArray(array) {
     },3000)
 }
 
-
-
-
-
-$(document).ready(function(){
-	
-	
-//stikey
-	$(".js--clint-section").waypoint(function(direction){
-		
-	if(direction== "down"){
-		$(".menu-section").addClass("stikey");
-	}else{
-	$(".menu-section").removeClass("stikey");	
-	}	
-		
-	});
-	//protfolio
-	var mixer=mixitup('.container');
-	
-	
-	$(".hellow-circle").circleProgress();	
-		
-	
-
-$(".hellow-circle").circleProgress();	
-	
-	
-	
-	
-	
-$('.owl-carosel').owlCarousel();	
-	
-});
-
-$(document).ready(function(){
-	
-	$(".logo").click(function(){
-		
-			$(this).slideIn();
-		
-	});	
-		
-});
-
-	
-
- function openNav() {
-	  
-	  document.getElementById("myNav").style.width="30%";
-  }
-  
-  
-  function closeNav() {
-	  
-	  document.getElementById("myNav").style.width="0%";
-  }
   
 
 
@@ -125,7 +39,7 @@ $(document).ready(function(){
 	  
 	  document.getElementById("myNav1").style.width="0%";
   }
-}
   
 
+ 
 
